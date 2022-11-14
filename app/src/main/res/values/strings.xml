@@ -1,33 +1,7 @@
 <resources>
-    <string name="app_name">Bitex</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="exchange">Exchange</string>
-    <string name="cross">cross</string>
-    <string name="btcusdt">BTCUSDT</string>
-    <string name="_8x">8X</string>
-    <string name="funding_rate">Funding Rate</string>
-    <string name="divider">|</string>
-    <string name="_0_0100">0.0100%</string>
-    <string name="next_payment">Next Payment In</string>
-    <string name="_07_02_24">07:02:24</string>
-    <string name="price_usdt">Price(USDT)</string>
-    <string name="amount_btc">Amount(BTC)</string>
-    <string name="_2">2</string>
-    <string name="defaultt">Default</string>
-    <string name="buy">Buy</string>
-    <string name="sell">Sell</string>
-    <string name="limit_order">Limit Order</string>
-    <string name="available">Available</string>
-    <string name="_1_13_usdt">1.13 USDT</string>
-    <string name="dash">-</string>
-    <string name="plus">+</string>
-    <string name="_7886_76">7886.76</string>
-    <string name="amount_btc_b">Amount(BTC)</string>
-    <string name="reduce_only">Reduce Only</string>
-    <string name="post_only">Post Only</string>
-    <string name="cost">Cost</string>
-    <string name="_0_usdt">0 USDT</string>
-    <string name="buy_long">Buy/Long</string>
-    <string name="open_order">Open Order</string>
+    <string name="app_name">Batman</string>
+    <string name="poster">poster</string>
+    <string name="director">Director</string>
+    <string name="actors">Actors</string>
+    <string name="plot">Plot</string>
 </resources>

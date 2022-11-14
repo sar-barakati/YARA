@@ -1,6 +1,6 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
-    <style name="Theme.Bitex" parent="@style/Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.YARA" parent="@style/Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowActionBar">false</item>
         <item name="android:windowFullscreen">true</item>
@@ -8,7 +8,7 @@
 
 
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/bottom_background</item>
+        <item name="colorPrimary">@color/background</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
