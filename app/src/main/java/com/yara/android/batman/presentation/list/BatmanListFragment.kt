@@ -6,7 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
+import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import com.yara.android.batman.R
@@ -40,12 +42,14 @@ class BatmanListFragment : Fragment() {
             layoutManager = GridLayoutManager(requireContext(), 3)
         }
 
-        lifecycleScope.launch {
-            viewModel.movieState.collect {
-                if (it.isNotEmpty()) {
-                    progressBar.visibility = View.INVISIBLE
-                    batmanListAdapter.movies = it
-                    batmanListAdapter.notifyItemRangeChanged(0, it.size)
+        viewLifecycleOwner.lifecycleScope.launch {
+            repeatOnLifecycle(Lifecycle.State.STARTED) {
+                viewModel.movieState.collect {
+                    if (it.isNotEmpty()) {
+                        progressBar.visibility = View.INVISIBLE
+                        batmanListAdapter.movies = it
+                        batmanListAdapter.notifyItemRangeChanged(0, it.size)
+                    }
                 }
             }
         }
